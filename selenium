@@ -1,0 +1,10 @@
+# Automatización UI con Selenium
+
+Pruebas de automatización UI usando Selenium WebDriver con C#.
+
+Incluye:
+- Login automatizado
+- Page Object Model (POM)
+- Pruebas end-to-end simples
+
+Aplicado a sistemas de práctica o entornos locales.
