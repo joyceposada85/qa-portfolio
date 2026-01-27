@@ -1,32 +1,32 @@
-# QA Automation Portfolio
+# Pruebas con JMeter – Login
 
-Hola, soy QA Automation con enfoque en pruebas funcionales, automatización de APIs, pruebas de carga y automatización UI.
+## Objetivo
+Validar el flujo de autenticación de una aplicación web mediante pruebas automatizadas con Apache JMeter.
 
-## ¿Qué encontrarás en este repositorio?
+## Flujo probado
+1. GET /Login  
+   - Obtiene la página de login
+   - Extrae el token antiforgery (_RequestVerificationToken)
 
-Este repositorio contiene ejemplos y prácticas de:
+2. POST /Login  
+   - Envía usuario y contraseña desde CSV
+   - Envía token antiforgery
+   - Mantiene sesión mediante cookies
 
-- Smoke Testing
-- Functional Testing
-- Integration Testing
-- Regression Testing
-- API Testing (Postman / HTTP)
-- Performance Testing (JMeter)
-- UI Automation (Selenium)
+3. GET /Home  
+   - Verifica que la sesión esté activa
+   - Confirma login exitoso si no redirige a /Login
 
-Todos los ejemplos están construidos con:
-- Datos ficticios
-- Aplicaciones de práctica o entornos locales
-- Sin uso de código propietario ni información sensible
+## Datos de prueba
+Los usuarios se cargan desde un archivo CSV con credenciales ficticias.
 
-## Tecnologías utilizadas
+## Validaciones
+- Código HTTP 200
+- Sesión activa
+- Manejo correcto de cookies y tokens
 
+## Herramientas
 - Apache JMeter
-- Selenium WebDriver (C#)
-- Postman
-- HTTP / HTTPS
-- Cookies, sesiones y tokens
-- Git & GitHub
-
-## Estructura del repositorio (en progreso)
-
+- CSV Data Set Config
+- Regular Expression Extractor
+- HTTP Cookie Manager
