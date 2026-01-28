@@ -1,10 +1,19 @@
-# Pruebas con JMeter
+## JMeter – Login Performance Test
 
-Este directorio contiene pruebas de automatización realizadas con Apache JMeter.
+Este directorio contiene una prueba realizada con Apache JMeter para evaluar
+el comportamiento del endpoint de login de una aplicación web.
 
-Incluye:
-- Smoke test de login
-- Validación de sesión
-- Pruebas funcionales HTTP
+### Escenario
+- Tipo de prueba: Performance / API
+- Endpoint probado: Login
+- Método: HTTP (GET)
+- Herramienta: Apache JMeter
 
-Todos los ejemplos usan datos ficticios y entornos locales.
+### Objetivo
+- Validar disponibilidad del endpoint
+- Observar tiempos de respuesta
+- Simular acceso concurrente sin interfaz gráfica
+
+### Nota
+Las URLs y datos sensibles fueron anonimizados.
+Este test se utiliza únicamente con fines demostrativos.
